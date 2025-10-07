@@ -67,6 +67,21 @@
   }
 </style>
 </head>
+  <style>
+  #emoji {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 9999;
+  }
+
+  #emoji.visivel {
+    opacity: 1;
+  }
+</style>
 <body>
 <header>Conspiração: A Prova Irrefutável</header>
 <main>
@@ -106,3 +121,4 @@ window.addEventListener("scroll", function() {
 </script>
 </body>
 </html>
+
