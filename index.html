@@ -79,30 +79,16 @@
 </main>
 <nav>
   <button onclick="window.location.href='outro.html'">Ver a Segunda Teoria</button>
-  <button onclick="fecharApp()">Sair</button>
+
 </nav>
 
 <!-- Imagem que aparece ao rolar -->
 <img id="emoji" src="images.jpeg" alt="Emoji feliz">
 
-<script>
-function fecharApp() {
-  if (window.AppInventor) {
-    window.AppInventor.setWebViewString("sair");
-  } else {
-    alert("Saída simulada (teste fora do app)");
-  }
-}
 
-// Mostrar imagem ao scrollar
-window.addEventListener("scroll", function() {
-  const emoji = document.getElementById("emoji");
-  if (window.scrollY > 100) {
-    emoji.classList.add("visivel");
-  } else {
-    emoji.classList.remove("visivel");
-  }
+
 });
 </script>
 </body>
 </html>
+
