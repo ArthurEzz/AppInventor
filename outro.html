@@ -33,6 +33,8 @@
   }
   nav {
     margin-top: 25px;
+    display: flex;
+    gap: 10px;
   }
   button {
     background: #27ae60;
@@ -43,7 +45,6 @@
     font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    margin: 0 10px;
     box-shadow: 0 4px 6px #00000044;
     transition: background 0.3s ease;
   }
@@ -64,6 +65,17 @@
 </main>
 <nav>
   <button onclick="window.location.href='index.html'">Voltar para a Primeira Teoria</button>
+  <button onclick="fecharApp()">Sair</button>
 </nav>
+
+<script>
+function fecharApp() {
+  if (window.AppInventor) {
+    window.AppInventor.setWebViewString("sair");
+  } else {
+    alert("Saída simulada (teste fora do app)");
+  }
+}
+</script>
 </body>
 </html>
